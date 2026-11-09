@@ -1,0 +1,8 @@
+stages:
+  prepare:
+    cmd: python3 scripts/prepare.py
+    deps:
+    - data/raw.csv
+    - scripts/prepare.py
+    outs:
+    - data/result.csv
